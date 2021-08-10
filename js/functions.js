@@ -2,19 +2,19 @@ const items = [
   {
     id: 0,
     nome: "camiseta",
-    img: "../images/image.jpg",
+    img: "images/image.jpg",
     quantidade: 0
   },
   {
     id: 1,
     nome: "short",
-    img: "../images/image.jpg",
+    img: "images/image.jpg",
     quantidade: 0
   },
   {
     id: 2,
     nome: "sapato",
-    img: "../images/image.jpg",
+    img: "images/image.jpg",
     quantidade: 0
   }
 ]
@@ -22,7 +22,7 @@ const items = [
 inicializarLoja = () => {
   var containerProdutos = document.getElementById("produtos");
   items.map((val) => {
-    containerProdutos.innerHTML += '<div class="produto-single"><img =src="'+ val.img +'" /><p>'+ val.nome +'</p><a key="'+ val.id +'" href="#">Adicionar ao carrinho!</a></div>';
+    containerProdutos.innerHTML += '<div class="produto-single"><img src="'+ val.img +'" /><p>'+ val.nome +'</p><a key="'+ val.id +'" href="#">Adicionar ao carrinho!</a></div>';
   })
 }
 
